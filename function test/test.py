@@ -41,8 +41,35 @@ def doubleSquares(iRange):
     for i in range(iRange):
         square(length, 90)
         length = length * 2
-doubleSquares(5)
+""" doubleSquares(5) """
 
-n = add(n,1)
+def addSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length, 90)
+        length += 25
+""" addSquares(5) """
+
+def square_spiral (y):
+    c = 5
+    for i in range(60):
+       square(c,y)
+       t.left(-5)
+       c = add(c,5)
+""" square_spiral(90) """
+
+def star(x,y):
+   for i in range(5):
+        t.forward(x)
+        t.left(y)
+""" star(100,144) """
+
+def star_spiral (y):
+    c = 5
+    for i in range(60):
+       star(c,y)
+       t.left(-5)
+       c = add(c,5)
+star_spiral(144)
 
 turtle.done
